@@ -2,17 +2,17 @@ dictionary = ["below","down","go","going","horn","how","howdy","it","i","low","o
 
 def substrings(phrase, dictionary)
 
-  #results hash
+  # results hash
   results = {}
 
-  #make phrase lowercase
+  # make phrase lowercase
   low_phrase = phrase.downcase
 
-  #map through the dictionary
+  # map through the dictionary
   dictionary.map do |word| 
-    #does the phrase contain the current word from the dicionary?
+    # does the phrase contain the current word from the dicionary?
     if low_phrase.include? word
-      #if yes, scan the phrase and count how many times it appears
+      # if yes, scan the phrase and count how many times it appears
       results[word] = low_phrase.scan(word).count;
     end
   end

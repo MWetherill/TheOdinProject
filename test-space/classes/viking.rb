@@ -29,6 +29,7 @@ class Viking
     enemy.take_damage(damage)
   end
 
+  protected
   def take_damage(damage)
     self.health -= damage
     self.speak("#{@name}: OUCH!")
@@ -45,6 +46,8 @@ lars = Viking.new("Lars", 23, 91, 9)
 
 
 puts oleg.strength
+puts oleg.health
 puts lars.strength
+puts lars.health
 puts oleg.strength_boost
-puts lars.attack(lars)
+puts lars.attack(oleg)

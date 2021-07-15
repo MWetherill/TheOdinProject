@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Library App</title>
+</head>
+
+<body>
+
+  <h1 id="title">My Library</h1>
+
+  <h4>Add a new book...</h4>
+  <form action="/action_page.php">
+    <div class="form-row">
+      <input type="text" id="title" name="title" value="Title...">
+    </div>
+    <div class="form-row">
+      <input type="text" id="author" name="author" value="Author...">
+    </div>
+    <div class="form-row">
+      <input type="text" id="pages" name="pages" value="Pages...">
+    </div>
+    <div class="form-row">
+      <input type="text" id="read" name="read" value="Read?...">
+    </div>
+    <input type="submit" value="Submit">
+  </form> 
+
+  <div id="my-library-container">
+  </div>
+  
+  <!-- js -->
+  <script src="main.js"></script>
+</body>
+</html>
